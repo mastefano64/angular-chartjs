@@ -1,0 +1,43 @@
+<div class="mytoolbar">
+  <div class="mytoolbartitle">
+    Chart.js
+    <div>
+      <a mat-list-item [routerLink]="['/home']">
+        <span>Home</span>
+      </a>
+    </div>
+    <div>
+      <a mat-list-item [routerLink]="['/chartbarsimple']">
+        <span>Chart bar</span>
+      </a>
+    </div>
+    <div>
+      <a mat-list-item [routerLink]="['/chartbardouble']">
+        <span>Chart bar double</span>
+      </a>
+    </div>
+    <div>
+      <a mat-list-item [routerLink]="['/chartlinesimple']">
+        <span>Chart line</span>
+      </a>  
+    </div>
+    <div>
+      <a mat-list-item [routerLink]="['/chartlinedouble']">
+        <span>Chart line double</span>
+      </a>  
+    </div>
+    <div>
+      <a mat-list-item [routerLink]="['/chartpie']">
+        <span>Chart pie</span>
+      </a>  
+    </div>
+    <div>
+      <a mat-list-item [routerLink]="['/chartstacked']">
+        <span>Chart stacked</span>
+      </a>  
+    </div>
+  </div>
+</div>
+<div>
+  <router-outlet></router-outlet>
+</div>

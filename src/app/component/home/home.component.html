@@ -1,0 +1,46 @@
+<div class="homepage">
+    <div>
+        Chart.js è una libreria JavaScript che supporta la generazione di ben 6 tipi di grafici differenti, dall’impatto
+        estremamente accattivante.
+        <br><br>
+        <div class="homeFelex">
+            <div class="homeFelex1">
+                <img src="/assets/code.png">
+            </div>
+            <div class="homeFelex2">
+                <br><br>
+                Il disegno del grafico si avvale del Canvas di HTML5, supportato dalla maggior parte dei browser moderni
+                (e anche su quelli più datati con
+                appositi polyfill) e risponde anche alle interazioni dell’utente, adattandosi in modo “responsive” al
+                device su cui viene prodotto.
+                <br><br>
+                In questa demo app vedremo come integrarla in Angular. In particola modo vedremo come creare 6 grafici
+                di base (Chart bar, Chart bar double,
+                Chart line, Chart line double, Chart pie, Chart stacked). Il codice sorgente di questa demo è posibile
+                scaricarlo su github al seguente link.
+                <br><br>
+                Nella demo app è possibile notare che tramite una combo box si può disegnare un grafico piuttosto che
+                un'altro. Questa funzionalità è presente
+                solo in (Chart bar, Chart bar double) ma il discorso vale anche per gli altri grafici. La cosa
+                importante è che se voglio creare una tipologia
+                di grafico diversa devo fare il destroy del precedente.
+                <br><br>
+                Nella demo app è possibile notare che si possono caricare set di dati diversi (per esempio mediante un
+                bottone). In questo caso non si deve
+                fare il destroy del grafico e ricrearlo usando i nuovi dati. Ma basta impostare la proprietà "data" del
+                "datasets" e richiamare il metodo
+                "update" dell'oggetto "Chart".
+                <br><br>
+                Il grafico è stato creato usando javascript lato client. Se volesimo salvarlo come immagine (nella demo
+                app è possibile farlo tramite
+                l'apposito popup). Dobbiamo usare il medodo "const imgURL = ele.toDataURL('image/png');" del'oggetto
+                Canvas. A quel punto otterremo
+                un url base64 dell immagine.
+            </div>
+        </div>
+        <br><br>
+        <div>
+
+        </div>
+    </div>
+</div>

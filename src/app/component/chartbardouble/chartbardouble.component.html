@@ -1,0 +1,23 @@
+<div class="pagecontainer">
+  <div>
+    <h2 class="reportTitle">Chart bar double</h2>
+    <div>
+      <span>Seleziona un tipo di grafico:&nbsp;&nbsp;</span>
+      <mat-form-field>
+        <mat-select name="selectchart" (selectionChange)="onChartChange($event)" [ngModel]="selectedtypechart">
+          <mat-option value="bar">Barra vetricale</mat-option>
+          <mat-option value="horizontalBar">Barra orizzontale</mat-option>
+        </mat-select>
+      </mat-form-field>
+      &nbsp;<button mat-raised-button color="primary" (click)="onLoadDataset(1)" [disabled]="currentdataset === 'dataset1'">Load dataset-1</button>
+      &nbsp;<button mat-raised-button color="primary" (click)="onLoadDataset(2)" [disabled]="currentdataset === 'dataset2'">Load dataset-2</button>
+      &nbsp;&nbsp;-&nbsp;&nbsp;<button mat-raised-button color="secondary" (click)="onSaveImaget()">Salva immagine</button>
+    </div>
+  </div>
+
+  <div class="reportPanelGrafico">
+    <div class="chart-container" style="width:70%; height:100%">
+      <canvas class="chart" #canvasRef></canvas>
+    </div>
+  </div>
+</div>

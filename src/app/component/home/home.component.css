@@ -1,0 +1,19 @@
+
+.homepage {
+    margin: 20px;
+    font-size: 15px;
+}
+
+.homeFelex {
+    display: flex;
+}
+
+.homeFelex1 {
+    margin-right: 5px;
+    text-align: justify;
+}
+
+.homeFelex2 {
+    margin-left: 5px;
+    text-align: justify;
+}
