@@ -4,6 +4,21 @@
     font-size: 15px;
 }
 
+.homeHeadLink a {
+    font-size: 17px;
+    color: gray;
+}
+
+.homeHeadLink a:active {
+    text-decoration: none;
+    color: gray;
+}
+
+.homeHeadLink a:hover {
+    text-decoration: underline;
+    color: gray;
+}
+
 .homeFelex {
     display: flex;
 }
@@ -16,4 +31,23 @@
 .homeFelex2 {
     margin-left: 5px;
     text-align: justify;
+}
+
+.homeFelex2 img {
+    padding-left: 8px;
+}
+
+.homeFootLink a {
+    font-size: 17px;
+    color: gray;
+}
+
+.homeFootLink a:active {
+    text-decoration: none;
+    color: gray;
+}
+
+.homeFootLink a:hover {
+    text-decoration: underline;
+    color: gray;
 }
