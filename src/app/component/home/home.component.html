@@ -27,38 +27,38 @@
                 Ed ha diversi parametri con cui è possibile personalizzare l'aspetto del grafico che verrà creato.
                 <br><br>
                 Il disegno del grafico si avvale del Canvas di HTML5, supportato dalla maggior parte dei browser moderni
-                (e anche su quelli più datati con appositi polyfill), risponde inoltre alle interazioni dell’utente, adattandosi
+                (e anche su quelli più datati con appositi polyfill). Risponde inoltre alle interazioni dell’utente, adattandosi
                 in modo “responsive” al device su cui viene prodotto.
                 <br><br>
-                Vedremo come integrarla in Angular. In particola modo vedremo come creare 6 grafici di base (Chart bar, Chart bar 
+                Vedremo come integrarla in Angular. In particolar modo vedremo come creare i 6 grafici di base (Chart bar, Chart bar 
                 double, Chart line, Chart line double, Chart pie, Chart stacked). Il codice sorgente di questa demo è posibile 
                 scaricarlo da github al seguente <a href="https://github.com/mastefano64/angular-chartjs" target="_blank">Link</a>.
                 <br><br>
                 Nella demo app tramite una combo box è possibile selezionare un grafico piuttosto che un'altro. Questa funzionalità 
                 è presente per semplicità solo in (Chart bar, Chart bar double) ma il discorso vale anche per gli altri grafici.
-                La cosa importante è che se voglio creare una tipologia di grafico diversa devo fare il destroy del precedente.
+                La cosa importante è che se voglio creare una tipologia di grafico diversa dobbiamo fare il destroy del precedente.
                 <br><br>
                 <img src="./assets/code1.png">
                 <br><br>
                 Nella demo app è possibile caricare set di dati diversi (per esempio mediante un bottone). In questo caso non si 
-                devefare il destroy del grafico e ricrearlo usando i nuovi dati (come sopra). Ma basta impostare la proprietà "data" 
+                deve fare il destroy del grafico e ricrearlo usando i nuovi dati (come sopra). Ma basta impostare la proprietà "data" 
                 del "datasets" e richiamare il metodo "update" dell'oggetto "Chart".
                 <br><br>
                 <img src="./assets/code2.png">
                 <br><br>
-                Il grafico è stato creato usando javascript lato client. Se volesimo salvarlo come immagine è possibile farlo 
+                Il grafico è stato creato usando chart.js / javascript lato client. Se volesimo salvarlo come immagine è possibile farlo 
                 tramite l'apposito popup. Usando il medodo "const imgURL = ele.toDataURL('image/png')" del'oggetto Canvas, otteniamo
                 l'immagine in formato base64. Poi visto che non abbiamo una parte server, la inseriamo in un tag "img" e con tasto
-                destro sull'imagine la salviamo.
+                destro sull'imagine la salviamo.              
             </div>
         </div>
         <br><br>
         <div class="homeFootLink">
             <a href="https://www.linkedin.com/in/stefano-marchisio-88b5803a/" target="_blank">Il mio profilo su linkedin</a>
             &nbsp;&nbsp;-&nbsp;&nbsp;
-            <a href="https://github.com/mastefano64/angular-chartjs" target="_blank">La demo su GitHub</a>.
+            <a href="https://github.com/mastefano64/angular-chartjs" target="_blank">La demo su GitHub</a>
             &nbsp;&nbsp;-&nbsp;&nbsp;
-            <a href="https://www.chartjs.org/docs/latest/" target="_blank">Chart.js site e documentazione</a>.
+            <a href="https://www.chartjs.org/docs/latest/" target="_blank">Chart.js site e documentazione</a>
         </div>
     </div>
 </div>

@@ -21,14 +21,17 @@
 
 .homeFelex {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .homeFelex1 {
+    width: 520px;
     margin-right: 5px;
     text-align: justify;
 }
 
 .homeFelex2 {
+    flex: 1;
     margin-left: 5px;
     text-align: justify;
 }
